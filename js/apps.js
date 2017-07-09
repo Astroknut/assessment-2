@@ -11,8 +11,8 @@ var player2;
 //Render raceTrack and players
 function startGame() {
     gameArea.start();
-    player1 = new component(200, 100, "green", 10, 100);
-    player2 = new component(200, 100, "red", 10, 300);
+    player1 = new component(30, 30, "green", 10, 100);
+    player2 = new component(30, 30, "red", 10, 300);
 }
 
 
@@ -56,6 +56,7 @@ function component(width, height, color, x, y) {
 	},
 	this.newPos = function() {
 		this.x += this.speed;
+		//break;
 	};
 }
 
@@ -66,19 +67,24 @@ function updateGameArea() {
 	player1.speed =  0;
 	player2.speed =  0;
 	if (gameArea.keys && gameArea.keys[39]) {
-		player1.speed = 2;
+		player1.speed = 20;
 	}
 	if (gameArea.keys && gameArea.keys[81]) {
-		player2.speed = 2;
+		player2.speed = 20;
 	}
 	player1.newPos();
 	player2.newPos();
 	player1.update();
 	player2.update();
+	if (player1.x === 870) {
+		alert("Player 1 has won!");
+	}
+	if (player2.x === 870) {
+		alert("Player 2 has won!");
+	}
 }
 
 function movePiece() {
 	this.speed += 1;
 }
 
-//update position of game pieces and clear past positions
