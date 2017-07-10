@@ -1,10 +1,55 @@
-h1 {
-	color: blue;
+body {
+	background-color: #01336B;
 }
+
 
 canvas {
     border:1px solid #d3d3d3;
-    background-color: #f1f1f1;
+    background: url(../img/pixar-logo.jpg);
+    background-size: cover;
     width: 100%;
     height: 100%;
+}
+
+.instructions {
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	font-family: "montaga";
+}
+
+.header {
+	font-family: "montaga";
+	font-size: 50px;
+	text-align: center;
+	display: inline-block;
+	position: relative;
+	left: 20%;
+}
+
+.racing {
+	display: inline-block;
+	position: relative;
+	left: 20%;
+	-ms-transform: rotate(-30deg);
+	-moz-transform: rotate(-30deg);
+	-webkit-transform: rotate(-30deg);
+	transform: rotate(-30deg);
+
+}
+
+
+.play {
+	font-family: "montaga";
+	font-size: 25px;
+	color: #ffcc00;	
+}
+
+a:hover {
+	background-color: "red";
+}
+
+.link {
+	text-align: center;
+	margin: 20px;
 }

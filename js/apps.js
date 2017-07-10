@@ -5,14 +5,14 @@ window.onload = function () {
 
 //Declare variables for players
 var player1;
-var player2; 
+var player2;
 
 
 //Render raceTrack and players
 function startGame() {
     gameArea.start();
-    player1 = new component(30, 30, "green", 10, 100);
-    player2 = new component(30, 30, "red", 10, 300);
+    player1 = new component(50, 50, "green", 10, 200);
+    player2 = new component(50, 50, "red", 10, 300);
 }
 
 
@@ -53,10 +53,9 @@ function component(width, height, color, x, y) {
     	ctx = gameArea.context;
     	ctx.fillStyle = color;
     	ctx.fillRect(this.x, this.y, this.width, this.height);
-	},
+	};
 	this.newPos = function() {
 		this.x += this.speed;
-		//break;
 	};
 }
 
@@ -67,10 +66,10 @@ function updateGameArea() {
 	player1.speed =  0;
 	player2.speed =  0;
 	if (gameArea.keys && gameArea.keys[39]) {
-		player1.speed = 20;
+		player1.speed = 2;
 	}
 	if (gameArea.keys && gameArea.keys[81]) {
-		player2.speed = 20;
+		player2.speed = 2;
 	}
 	player1.newPos();
 	player2.newPos();
