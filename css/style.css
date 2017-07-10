@@ -25,6 +25,7 @@ canvas {
 .header {
 	font-family: "montaga";
 	font-size: 50px;
+	color: white;
 	text-align: center;
 	display: inline-block;
 }
@@ -59,5 +60,19 @@ canvas {
 p {
 	font-family: "montaga";
 	font-size: 17px;
-	color: white;
+	color: #EC3A0E;
+}
+
+@media (max-width: 900px) {
+	.header {
+		display: block;
+		clear: right;
+	}
+
+	.racing {
+		display: block;
+		clear: left;
+		position: relative;
+		bottom: 50px;
+	}
 }
