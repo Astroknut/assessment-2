@@ -18,26 +18,28 @@ canvas {
 	font-family: "montaga";
 }
 
+.head {
+	text-align: center;
+}
+
 .header {
 	font-family: "montaga";
 	font-size: 50px;
 	text-align: center;
 	display: inline-block;
-	position: relative;
-	left: 20%;
 }
 
 .racing {
 	display: inline-block;
-	position: relative;
-	left: 20%;
 	-ms-transform: rotate(-30deg);
 	-moz-transform: rotate(-30deg);
 	-webkit-transform: rotate(-30deg);
 	transform: rotate(-30deg);
-
 }
 
+.banner {
+	text-align: center;
+}
 
 .play {
 	font-family: "montaga";
@@ -45,11 +47,17 @@ canvas {
 	color: #ffcc00;	
 }
 
-a:hover {
-	background-color: "red";
-}
-
 .link {
 	text-align: center;
 	margin: 20px;
+}
+
+.paragraph {
+	text-align: center;
+}
+
+p {
+	font-family: "montaga";
+	font-size: 17px;
+	color: white;
 }

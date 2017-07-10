@@ -60,7 +60,7 @@ function component(width, height, color, x, y) {
 }
 
 
-//update function for 
+//update function moves players and sets win condiitons
 function updateGameArea() {
 	gameArea.clear();
 	player1.speed =  0;
@@ -83,7 +83,4 @@ function updateGameArea() {
 	}
 }
 
-function movePiece() {
-	this.speed += 1;
-}
 
